@@ -1,0 +1,20 @@
+import java.util.Scanner; // Import Scanner class to read input
+
+public class Main {
+    public static void main(String[] args) {
+        // Create Scanner object to take input from the terminal
+        Scanner input = new Scanner(System.in);
+
+        // Prompt user to enter their name
+        System.out.print("Enter your name: ");
+
+        // Read the entered name using nextLine()
+        String name = input.nextLine();
+
+        // Print the entered name
+        System.out.println("Hello, " + name + "! Welcome!");
+
+        // Close the scanner to avoid memory leaks
+        input.close();
+    }
+}
